@@ -1,0 +1,2 @@
+public class Fuckyou {
+}
