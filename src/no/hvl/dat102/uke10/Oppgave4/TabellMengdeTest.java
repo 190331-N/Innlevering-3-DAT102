@@ -3,14 +3,9 @@ package no.hvl.dat102.uke10.Oppgave4;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.Set;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class TabellMengdeTest {
-
     private MengdeADT<Integer> m;
     private MengdeADT<Integer> a;
     private MengdeADT<Integer> b;
@@ -102,5 +97,49 @@ public class TabellMengdeTest {
         assertTrue(a.erDelmengdeAv(b));
         assertTrue(a.erDisjunkt(c));
         assertFalse(a.erDisjunkt(b));
+    }
+    @Test
+    void minusSkalFjerneElementer() {
+        a.leggTil(1);
+        a.leggTil(2);
+        a.leggTil(3);
+        b.leggTil(2);
+
+        MengdeADT<Integer> m = a.minus(b);
+
+        assertTrue(m.inneholder(1));
+        assertTrue(m.inneholder(3));
+        assertFalse(m.inneholder(2));
+        assertEquals(2,m.antallElementer());
+    }
+    @Test
+    void leggTilAlleFraSkalLeggeTilAlle() {
+        a.leggTil(1);
+        a.leggTil(2);
+        b.leggTil(2);
+        b.leggTil(3);
+        a.leggTilAlleFra(b);
+
+        assertTrue(a.inneholder(1));
+        assertTrue(a.inneholder(2));
+        assertTrue(a.inneholder(3));
+        assertEquals(3, a.antallElementer());
+    }
+    @Test
+    void tilTabellSkalReturnereAlleElementer() {
+        m.leggTil(1);
+        m.leggTil(2);
+        m.leggTil(3);
+
+        Integer[] tabell = m.tilTabell();
+        assertEquals(3, tabell.length);
+        boolean har1 = false, har2 = false, har3 = false;
+
+        for (Integer i : tabell) {
+            if (i == 1) har1 = true;
+            if (i == 2) har2 = true;
+            if (i == 3) har3 = true;
+        }
+        assertTrue(har1 && har2 && har3);
     }
     }
