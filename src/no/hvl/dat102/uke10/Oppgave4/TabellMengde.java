@@ -1,6 +1,6 @@
 package no.hvl.dat102.uke10.Oppgave4;
 
-public class TabellMengde implements MengdeADT{
+public class TabellMengde<T> implements MengdeADT<T>{
     @Override
     public boolean erTom() {
         return false;
@@ -52,13 +52,13 @@ public class TabellMengde implements MengdeADT{
     }
 
     @Override
-    public Object fjern(Object element) {
+    public T fjern(Object element) {
         return null;
     }
 
     @Override
-    public Object[] tilTabell() {
-        return new Object[0];
+    public T[] tilTabell() {
+        return new T[0];
     }
 
     @Override
