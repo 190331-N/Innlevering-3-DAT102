@@ -12,30 +12,69 @@ public class LenketMengde<T> implements MengdeADT<T>{
             this.neste = null;
         }
     }
+    private Node<T> forste;
+    private int antall;
 
     @Override
     public boolean erTom() {
-        return false;
+        return forste == null;
     }
 
     @Override
     public boolean inneholder(T element) {
+        if (erTom()){
+            return false;
+        }
+        while (forste!= null){
+            if (forste.data.equals(element)){
+                return true;
+            }
+            forste = forste.neste;
+        }
         return false;
     }
 
     @Override
     public boolean erDelmengdeAv(MengdeADT<T> annenMengde) {
+        if(erTom()){
+            return false;
+        }
+        while (forste != null){
+            if (annenMengde.inneholder(forste.data)){
+                return true;
+            }
+            forste = forste.neste;
+        }
+
         return false;
     }
 
     @Override
     public boolean erLik(MengdeADT<T> annenMengde) {
+        if(erTom()){
+            return false;
+        }
+        while (forste != null){
+            if (annenMengde.inneholder(forste.data)){
+                return true;
+            }
+            forste = forste.neste;
+        }
         return false;
     }
 
     @Override
     public boolean erDisjunkt(MengdeADT<T> annenMengde) {
-        return false;
+        if(erTom()){
+            return false;
+        }
+        while (forste != null){
+            if (annenMengde.inneholder(forste.data)){
+                return false;
+            }
+            forste = forste.neste;
+        }
+        return true;
     }
 
     @Override
@@ -75,6 +114,6 @@ public class LenketMengde<T> implements MengdeADT<T>{
 
     @Override
     public int antallElementer() {
-        return 0;
+        return antall;
     }
 }
