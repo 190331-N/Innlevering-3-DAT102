@@ -1,17 +1,6 @@
 package no.hvl.dat102.uke10.Oppgave4;
 
 public class TabellMengde<T> implements MengdeADT<T>{
-
-    private T[] tabell;
-    private int antall;
-
-    private static int startStorrelse = 10;
-
-    public TabellMengde(){
-        tabell = (T[]) new Object[startStorrelse];
-        antall = 0;
-    }
-
     @Override
     public boolean erTom() {
         return false;
