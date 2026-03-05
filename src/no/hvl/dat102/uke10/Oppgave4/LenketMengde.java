@@ -1,30 +1,25 @@
 package no.hvl.dat102.uke10.Oppgave4;
 
-public class TabellMengde<T> implements MengdeADT<T>{
+public class LenketMengde<T> implements MengdeADT<T>{
 
-    private T[] tabell;
-    private int antall;
+    public class Node<T> {
 
-    private static int startStorrelse = 10;
+        T data;
+        Node<T> neste = null;
 
-    public TabellMengde(){
-        tabell = (T[]) new Object[startStorrelse];
-        antall = 0;
+        public Node(T data) {
+            this.data = data;
+            this.neste = null;
+        }
     }
 
     @Override
     public boolean erTom() {
-        return antall == 0;
+        return false;
     }
 
     @Override
     public boolean inneholder(T element) {
-        for (int i = 0; i < antall; i++) {
-            if (tabell[i].equals(element)) {
-                return true;
-            }
-        }
-
         return false;
     }
 
@@ -44,17 +39,17 @@ public class TabellMengde<T> implements MengdeADT<T>{
     }
 
     @Override
-    public MengdeADT snitt(MengdeADT<T> annenMengde) {
+    public MengdeADT<T> snitt(MengdeADT<T> annenMengde) {
         return null;
     }
 
     @Override
-    public MengdeADT union(MengdeADT<T> annenMengde) {
+    public MengdeADT<T> union(MengdeADT<T> annenMengde) {
         return null;
     }
 
     @Override
-    public MengdeADT minus(MengdeADT<T> annenMengde) {
+    public MengdeADT<T> minus(MengdeADT<T> annenMengde) {
         return null;
     }
 
@@ -64,7 +59,7 @@ public class TabellMengde<T> implements MengdeADT<T>{
     }
 
     @Override
-    public void leggTilAlleFra(MengdeADT<T>annenMengde) {
+    public void leggTilAlleFra(MengdeADT<T> annenMengde) {
 
     }
 
@@ -80,6 +75,6 @@ public class TabellMengde<T> implements MengdeADT<T>{
 
     @Override
     public int antallElementer() {
-        return antall;
+        return 0;
     }
 }
