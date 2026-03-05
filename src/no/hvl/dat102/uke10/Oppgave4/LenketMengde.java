@@ -1,6 +1,18 @@
 package no.hvl.dat102.uke10.Oppgave4;
 
 public class LenketMengde<T> implements MengdeADT<T>{
+
+    public class Node<T> {
+
+        T data;
+        Node<T> neste = null;
+
+        public Node(T data) {
+            this.data = data;
+            this.neste = null;
+        }
+    }
+
     @Override
     public boolean erTom() {
         return false;
