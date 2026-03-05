@@ -1,13 +1,30 @@
 package no.hvl.dat102.uke10.Oppgave4;
 
 public class TabellMengde<T> implements MengdeADT<T>{
+
+    private T[] tabell;
+    private int antall;
+
+    private static int startStorrelse = 10;
+
+    public TabellMengde(){
+        tabell = (T[]) new Object[startStorrelse];
+        antall = 0;
+    }
+
     @Override
     public boolean erTom() {
-        return false;
+        return antall == 0;
     }
 
     @Override
     public boolean inneholder(T element) {
+        for (int i = 0; i < antall; i++) {
+            if (tabell[i].equals(element)) {
+                return true;
+            }
+        }
+
         return false;
     }
 
@@ -63,6 +80,6 @@ public class TabellMengde<T> implements MengdeADT<T>{
 
     @Override
     public int antallElementer() {
-        return 0;
+        return antall;
     }
 }
