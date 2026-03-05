@@ -2,18 +2,22 @@ package no.hvl.dat102.uke10.Oppgave4;
 
 public class LenketMengde<T> implements MengdeADT<T>{
 
-    public class Node<T> {
+    private static class Node<T> {
 
         T data;
         Node<T> neste = null;
 
         public Node(T data) {
             this.data = data;
-            this.neste = null;
         }
     }
     private Node<T> forste;
     private int antall;
+    
+    public LenketMengde(){
+        forste = null;
+        antall = 0;
+    }
 
     @Override
     public boolean erTom() {
@@ -22,94 +26,160 @@ public class LenketMengde<T> implements MengdeADT<T>{
 
     @Override
     public boolean inneholder(T element) {
-        if (erTom()){
-            return false;
-        }
-        while (forste!= null){
-            if (forste.data.equals(element)){
+        Node<T> current = forste;
+
+        while (current!= null){
+            if (current.data.equals(element)){
                 return true;
             }
-            forste = forste.neste;
+            current = current.neste;
         }
         return false;
     }
 
     @Override
     public boolean erDelmengdeAv(MengdeADT<T> annenMengde) {
-        if(erTom()){
-            return false;
-        }
-        while (forste != null){
-            if (annenMengde.inneholder(forste.data)){
-                return true;
-            }
-            forste = forste.neste;
-        }
+        Node<T> current = forste;
 
-        return false;
+        while (current != null){
+            if (!(annenMengde.inneholder(current.data))){
+                return false;
+            }
+            current = current.neste;
+        }
+        return true;
     }
 
     @Override
     public boolean erLik(MengdeADT<T> annenMengde) {
-        if(erTom()){
+        Node<T> current = forste;
+
+        if (antall != annenMengde.antallElementer()){
             return false;
         }
-        while (forste != null){
-            if (annenMengde.inneholder(forste.data)){
-                return true;
+        while (current != null){
+            if (!(annenMengde.inneholder(current.data))){
+                return false;
             }
-            forste = forste.neste;
+            current = current.neste;
         }
-        return false;
+        return true;
     }
 
     @Override
     public boolean erDisjunkt(MengdeADT<T> annenMengde) {
-        if(erTom()){
-            return false;
-        }
-        while (forste != null){
-            if (annenMengde.inneholder(forste.data)){
+        Node<T> current = forste;
+        while (current != null){
+            if (annenMengde.inneholder(current.data)){
                 return false;
             }
-            forste = forste.neste;
+            current = current.neste;
         }
         return true;
     }
 
     @Override
     public MengdeADT<T> snitt(MengdeADT<T> annenMengde) {
-        return null;
+        Node<T> current = forste;
+        LenketMengde<T> nyMengde = new LenketMengde<>();
+
+        while (current != null){
+            if (annenMengde.inneholder(current.data)){
+                nyMengde.leggTil(current.data);
+            }
+            current = current.neste;
+        }
+        return nyMengde;
     }
 
     @Override
     public MengdeADT<T> union(MengdeADT<T> annenMengde) {
-        return null;
+        LenketMengde<T> nyMengde = new LenketMengde<>();
+        nyMengde.leggTilAlleFra(this);
+        nyMengde.leggTilAlleFra(annenMengde);
+        return nyMengde;
     }
 
     @Override
     public MengdeADT<T> minus(MengdeADT<T> annenMengde) {
-        return null;
+        Node<T> current = forste;
+        LenketMengde<T> nyMengde = new LenketMengde<>();
+
+        while (current != null){
+            if (!annenMengde.inneholder(current.data)){
+                nyMengde.leggTil(current.data);
+            }
+            current = current.neste;
+        }
+        return nyMengde;
     }
 
     @Override
     public void leggTil(T element) {
+        Node<T> nyNode = new Node<T>(element);
 
+        Node<T> current = forste;
+        while (current != null){
+            if (current.data.equals(element)){
+                return;
+            }
+            current = current.neste;
+        }
+        nyNode.neste = forste;
+        forste = nyNode;
+        antall++;
     }
 
     @Override
     public void leggTilAlleFra(MengdeADT<T> annenMengde) {
+        T[] tab = (T[]) annenMengde.tilTabell();
 
+        for (int i = 0; i < tab.length; i++) {
+            leggTil(tab[i]);
+        }
     }
 
     @Override
     public T fjern(T element) {
-        return null;
+        if (erTom()){
+            return null;
+        }
+        Node<T> forrige = null;
+        Node<T> current = forste;
+        T temp = null;
+
+        while (current != null){
+            if (current.data.equals(element)){
+                if (current == forste){
+                    temp = forste.data;
+                    forste = forste.neste;
+                    antall--;
+                    return temp;
+                }else{
+                    temp = current.data;
+                    forrige.neste = current.neste;
+                    antall--;
+                    return temp;
+                }
+            }
+            forrige = current;
+            current = current.neste;
+        }
+        return temp;
     }
 
     @Override
     public T[] tilTabell() {
-        return null;
+        T[] tab = (T[]) new Object[antall];
+        Node<T> current = forste;
+        int i = 0;
+
+        while (current != null){
+            tab[i] = current.data;
+            i++;
+            current = current.neste;
+        }
+        return tab;
     }
 
     @Override
