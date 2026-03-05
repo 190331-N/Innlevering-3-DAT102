@@ -136,9 +136,9 @@ public class TabellMengdeTest {
         boolean har1 = false, har2 = false, har3 = false;
 
         for (Integer i : tabell) {
-            if (i == 1) har1 = true;
-            if (i == 2) har2 = true;
-            if (i == 3) har3 = true;
+            if (i.equals(1)) har1 = true;
+            if (i.equals(2)) har2 = true;
+            if (i.equals(3)) har3 = true;
         }
         assertTrue(har1 && har2 && har3);
     }
