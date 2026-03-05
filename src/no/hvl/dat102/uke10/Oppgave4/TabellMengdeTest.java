@@ -11,7 +11,6 @@ import static org.junit.jupiter.api.Assertions.*;
 
 public class TabellMengdeTest {
 
-
     private MengdeADT<Integer> m;
     private MengdeADT<Integer> a;
     private MengdeADT<Integer> b;
@@ -19,46 +18,40 @@ public class TabellMengdeTest {
 
     @BeforeEach
     void setup() {
-
         m = new TabellMengde<>();
         a = new TabellMengde<>();
         b = new TabellMengde<>();
         c = new TabellMengde<>();
-
     }
 
     @Test
     void nyMengdeErTom() {
-
         assertTrue(m.erTom());
         assertEquals(0, m.antallElementer());
     }
     @Test
     void leggTilOgInneholder() {
-
-        m.leggTil("A");
-        m.leggTil("B");
+        m.leggTil(10);
+        m.leggTil(20);
 
         assertFalse(m.erTom());
-        assertTrue(m.inneholder("A"));
-        assertTrue(m.inneholder("B"));
-        assertFalse(m.inneholder("c"));
+        assertTrue(m.inneholder(10));
+        assertTrue(m.inneholder(20));
+        assertFalse(m.inneholder(30));
         assertEquals(2, m.antallElementer());
     }
     @Test
     void leggTilSkalIkkeGiDuplikater() {
-
-        m.leggTil("A");
-        m.leggTil("A");
-        m.leggTil("A");
+        m.leggTil(10);
+        m.leggTil(10);
+        m.leggTil(10);
 
         assertEquals(1, m.antallElementer());
-        assertTrue(m.inneholder("A"));
+        assertTrue(m.inneholder(10));
     }
 
     @Test
     void fjernSkalFjerne() {
-
         m.leggTil(1);
         m.leggTil(2);
         m.leggTil(3);
@@ -69,7 +62,6 @@ public class TabellMengdeTest {
     }
     @Test
     void unionSkalGiAlle() {
-
         a.leggTil(1);
         a.leggTil(2);
         b.leggTil(2);
@@ -84,7 +76,6 @@ public class TabellMengdeTest {
     }
     @Test
     void snittSkalGiFelles() {
-
         a.leggTil(1);
         a.leggTil(2);
         a.leggTil(3);
@@ -101,7 +92,6 @@ public class TabellMengdeTest {
     }
     @Test
     void erLik_erDisjunkt_erDelMengde() {
-
         a.leggTil(1);
         a.leggTil(2);
         b.leggTil(2);
