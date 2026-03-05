@@ -7,58 +7,58 @@ public class TabellMengde<T> implements MengdeADT<T>{
     }
 
     @Override
-    public boolean inneholder(Object element) {
+    public boolean inneholder(T element) {
         return false;
     }
 
     @Override
-    public boolean erDelmengdeAv(MengdeADT annenMengde) {
+    public boolean erDelmengdeAv(MengdeADT<T> annenMengde) {
         return false;
     }
 
     @Override
-    public boolean erLik(MengdeADT annenMengde) {
+    public boolean erLik(MengdeADT<T> annenMengde) {
         return false;
     }
 
     @Override
-    public boolean erDisjunkt(MengdeADT annenMengde) {
+    public boolean erDisjunkt(MengdeADT<T> annenMengde) {
         return false;
     }
 
     @Override
-    public MengdeADT snitt(MengdeADT annenMengde) {
+    public MengdeADT snitt(MengdeADT<T> annenMengde) {
         return null;
     }
 
     @Override
-    public MengdeADT union(MengdeADT annenMengde) {
+    public MengdeADT union(MengdeADT<T> annenMengde) {
         return null;
     }
 
     @Override
-    public MengdeADT minus(MengdeADT annenMengde) {
+    public MengdeADT minus(MengdeADT<T> annenMengde) {
         return null;
     }
 
     @Override
-    public void leggTil(Object element) {
+    public void leggTil(T element) {
 
     }
 
     @Override
-    public void leggTilAlleFra(MengdeADT annenMengde) {
+    public void leggTilAlleFra(MengdeADT<T>annenMengde) {
 
     }
 
     @Override
-    public T fjern(Object element) {
+    public T fjern(T element) {
         return null;
     }
 
     @Override
     public T[] tilTabell() {
-        return new T[0];
+        return null;
     }
 
     @Override
