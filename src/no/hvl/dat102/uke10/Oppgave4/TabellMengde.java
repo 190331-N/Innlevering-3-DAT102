@@ -1,8 +1,6 @@
 package no.hvl.dat102.uke10.Oppgave4;
 
 public class TabellMengde<T> implements MengdeADT<T>{
-
-
     @Override
     public boolean erTom() {
         return false;
