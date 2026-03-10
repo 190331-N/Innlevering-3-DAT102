@@ -81,17 +81,46 @@ public class TabellMengde<T> implements MengdeADT<T> {
 
     @Override
     public MengdeADT union(MengdeADT<T> annenMengde) {
-        return null;
+        if (annenMengde == null) {
+            throw new IllegalArgumentException("annenMengde er null");
+        }
+
+        TabellMengde<T> resultat = new TabellMengde<>();
+
+        // legg inn alle fra denne mengden
+        for (int i = 0; i < antall; i++) {
+            resultat.leggTil(tabell[i]);
+        }
+
+        // legg inn alle fra annenMengde
+        T[] tab2 = annenMengde.tilTabell();
+        for (int i = 0; i < annenMengde.antallElementer(); i++) {
+            resultat.leggTil(tab2[i]);
+        }
+
+        return resultat;
     }
 
     @Override
     public MengdeADT minus(MengdeADT<T> annenMengde) {
-        return null;
+        if (annenMengde == null) {
+            throw new IllegalArgumentException("annenMengde er null");
+        }
+
+        TabellMengde<T> resultat = new TabellMengde<>();
+
+        for (int i = 0; i < antall; i++) {
+            if (!annenMengde.inneholder(tabell[i])) {
+                resultat.leggTil(tabell[i]);
+            }
+        }
+
+        return resultat;
     }
 
     @Override
     public void leggTil(T element) {
-        if (element == null) throw new IllegalArgumentException();
+        if (element == null) throw new IllegalArgumentException("element er null");
         if (inneholder(element)) return;
         if (antall == tabell.length) utvid();
         tabell[antall++] = element;
@@ -100,7 +129,14 @@ public class TabellMengde<T> implements MengdeADT<T> {
 
     @Override
     public void leggTilAlleFra(MengdeADT<T>annenMengde) {
+        if (annenMengde == null) {
+            throw new IllegalArgumentException("annenMengde er null");
+        }
 
+        T[] tab2 = annenMengde.tilTabell();
+        for (int i = 0; i < annenMengde.antallElementer(); i++) {
+            leggTil(tab2[i]);
+        }
     }
 
     @Override
@@ -125,7 +161,7 @@ public class TabellMengde<T> implements MengdeADT<T> {
 
     @Override
     public T[] tilTabell() {
-        return null;
+        return Arrays.copyOf(tabell, antall);
     }
 
     @Override

@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4aa09659-1794-4c57-a7f6-3eefca4b221b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/no/hvl/dat102/uke11/Oppgave4/TestBinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/no/hvl/dat102/uke11/Oppgave4/TestHashSet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat102/uke11/Oppgave4/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat102/uke11/Oppgave4/main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/IMPL/TabellMengde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/IMPL/TabellMengde.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +28,16 @@
     &quot;assignee&quot;: &quot;190331-N&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/190331-N/Innlevering-3-DAT102.git&quot;,
-    &quot;accountId&quot;: &quot;6af0cc6d-e268-46db-8704-3aa7fb45b84a&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/190331-N/Innlevering-3-DAT102.git",
+    "accountId": "bdd46657-de06-4906-944b-a72787b34ce0"
   }
-}</component>
+}]]></component>
+  <component name="McpProjectServerCommands">
+    <commands />
+    <urls />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -45,21 +46,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.JavaSetToMengdeTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Github programering/Innlevering-3-DAT102",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="no.hvl.dat102.uke10.Oppgave4.TEST" />
@@ -102,6 +111,7 @@
       <updated>1772539654089</updated>
       <workItem from="1772539655104" duration="10000" />
       <workItem from="1773141072527" duration="2142000" />
+      <workItem from="1773161587174" duration="543000" />
     </task>
     <servers />
   </component>
