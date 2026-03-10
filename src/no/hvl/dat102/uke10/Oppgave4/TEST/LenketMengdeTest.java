@@ -1,4 +1,4 @@
-package no.hvl.dat102.uke10.Oppgave4;
+package no.hvl.dat102.uke10.Oppgave4.TEST;
 
 import no.hvl.dat102.uke10.Oppgave4.ADT.MengdeADT;
 import no.hvl.dat102.uke10.Oppgave4.IMPL.LenketMengde;

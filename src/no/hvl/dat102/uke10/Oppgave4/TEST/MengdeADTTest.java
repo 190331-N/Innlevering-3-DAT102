@@ -1,4 +1,4 @@
-package no.hvl.dat102.uke10.Oppgave4;
+package no.hvl.dat102.uke10.Oppgave4.TEST;
 
 import no.hvl.dat102.uke10.Oppgave4.ADT.MengdeADT;
 import org.junit.jupiter.api.BeforeEach;
@@ -145,12 +145,12 @@ public abstract class MengdeADTTest {
         m.leggTil(2);
         m.leggTil(3);
 
-        Integer[] tabell = m.tilTabell();
+        Object[] tabell = m.tilTabell();
         assertEquals(3, tabell.length);
 
         boolean har1 = false, har2 = false, har3 = false;
 
-        for (Integer i : tabell) {
+        for (Object i : tabell) {
             if (i.equals(1)) har1 = true;
             if (i.equals(2)) har2 = true;
             if (i.equals(3)) har3 = true;
