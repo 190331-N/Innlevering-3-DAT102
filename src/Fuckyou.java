@@ -24,7 +24,7 @@ public class Fuckyou extends JPanel {
         }
 
         // Fronttekst
-        g2.setColor(Color.RED);
+        g2.setColor(Color.magenta);
         g2.drawString(tekst, x, y);
     }
 

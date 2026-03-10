@@ -5,18 +5,21 @@ import java.util.Random;
 
 public class TestHashSet {
 
-    public static void testHashSet(HashSet<Integer> set) {
-        Random rand = new Random();
+    public static void testHashSet(HashSet<Integer> set,  Integer[] soketal) {
 
+        int funn = 0;
         long start = System.nanoTime();
 
-        for (int i = 0; i < 10000; i++) {
-            int tall = rand.nextInt(1000000);
-            set.contains(tall);
+        for (int i = 0; i < soketal.length; i++) {
+            if (set.contains(soketal[i])) {
+                funn++;
+            }
         }
+
 
         long slutt = System.nanoTime();
 
         System.out.println("HashSet søketid: " + (slutt - start) + " ns");
+        System.out.println("HashSet fann: " + funn + " tall");
     }
 }
