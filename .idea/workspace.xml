@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4aa09659-1794-4c57-a7f6-3eefca4b221b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/IMPL/TabellMengde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/IMPL/TabellMengde.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Fuckyou.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Fuckyou.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,7 +49,12 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.Fuckyou.executor": "Run",
+    "Application.main.executor": "Run",
     "JUnit.JavaSetToMengdeTest.executor": "Run",
+    "JUnit.LenketMengdeTest.executor": "Run",
+    "JUnit.MengdeADTTest.executor": "Run",
+    "JUnit.TabellMengdeTest.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -111,7 +117,7 @@
       <updated>1772539654089</updated>
       <workItem from="1772539655104" duration="10000" />
       <workItem from="1773141072527" duration="2142000" />
-      <workItem from="1773161587174" duration="543000" />
+      <workItem from="1773161587174" duration="1604000" />
     </task>
     <servers />
   </component>
