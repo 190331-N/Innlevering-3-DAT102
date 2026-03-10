@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4aa09659-1794-4c57-a7f6-3eefca4b221b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/TEST/JavaSetToMengdeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/TEST/LenketMengdeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/TEST/MengdeADTTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/TEST/TabellMengdeTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/TabellMengdeTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/TabellMengdeTestt.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/IMPL/JavaSetToMengde.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/IMPL/JavaSetToMengde.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
