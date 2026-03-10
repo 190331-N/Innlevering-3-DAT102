@@ -1,6 +1,8 @@
-package no.hvl.dat102.uke10.Oppgave4;
+package no.hvl.dat102.uke10.Oppgave4.IMPL;
 
-public class LenketMengde<T> implements MengdeADT<T>{
+import no.hvl.dat102.uke10.Oppgave4.ADT.MengdeADT;
+
+public class LenketMengde<T> implements MengdeADT<T> {
 
     private static class Node<T> {
 

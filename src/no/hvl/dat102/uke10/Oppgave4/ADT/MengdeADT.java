@@ -1,4 +1,4 @@
-package no.hvl.dat102.uke10.Oppgave4;
+package no.hvl.dat102.uke10.Oppgave4.ADT;
 
 public interface MengdeADT<T> {
 

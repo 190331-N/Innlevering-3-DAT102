@@ -1,7 +1,9 @@
-package no.hvl.dat102.uke10.Oppgave4;
+package no.hvl.dat102.uke10.Oppgave4.IMPL;
+import no.hvl.dat102.uke10.Oppgave4.ADT.MengdeADT;
+
 import java.util.Arrays;
 
-public class TabellMengde<T> implements MengdeADT<T>{
+public class TabellMengde<T> implements MengdeADT<T> {
 
     private T[] tabell;
     private int antall;

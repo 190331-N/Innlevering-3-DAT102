@@ -1,4 +1,6 @@
-package no.hvl.dat102.uke10.Oppgave4;
+package no.hvl.dat102.uke10.Oppgave4.IMPL;
+
+import no.hvl.dat102.uke10.Oppgave4.ADT.MengdeADT;
 
 public class JavaSetToMengde<T> implements MengdeADT<T> {
 

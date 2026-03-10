@@ -1,11 +1,13 @@
 package no.hvl.dat102.uke10.Oppgave4;
 
+import no.hvl.dat102.uke10.Oppgave4.ADT.MengdeADT;
+import no.hvl.dat102.uke10.Oppgave4.IMPL.TabellMengde;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-public class TabellMengdeTest {
+public class TabellMengdeTestt {
     private MengdeADT<Integer> m;
     private MengdeADT<Integer> a;
     private MengdeADT<Integer> b;
@@ -17,6 +19,7 @@ public class TabellMengdeTest {
         a = new TabellMengde<>();
         b = new TabellMengde<>();
         c = new TabellMengde<>();
+
     }
 
     @Test
