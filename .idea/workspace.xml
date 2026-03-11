@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4aa09659-1794-4c57-a7f6-3eefca4b221b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/IMPL/HobbyMatchMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/no/hvl/dat102/uke10/Oppgave4/IMPL/HobbyMatchMain.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,40 +46,41 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.Fuckyou.executor&quot;: &quot;Run&quot;,
-    &quot;Application.main.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.JavaSetToMengdeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LenketMengdeTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.MengdeADTTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.TabellMengdeTest.executor&quot;: &quot;Run&quot;,
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.MCP Project settings loaded&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Github programering/Innlevering-3-DAT102&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.Fuckyou.executor": "Run",
+    "Application.HobbyMatchMain.executor": "Run",
+    "Application.main.executor": "Run",
+    "JUnit.JavaSetToMengdeTest.executor": "Run",
+    "JUnit.LenketMengdeTest.executor": "Run",
+    "JUnit.MengdeADTTest.executor": "Run",
+    "JUnit.TabellMengdeTest.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.MCP Project settings loaded": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Github programering/Innlevering-3-DAT102",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="no.hvl.dat102.uke10.Oppgave4.TEST" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.JavaSetToMengdeTest">
+  <component name="RunManager" selected="Application.HobbyMatchMain">
     <configuration name="Fuckyou" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Fuckyou" />
       <module name="Innlevering-3-DAT102" />
@@ -87,12 +88,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="no.hvl.dat102.uke11.Oppgave4.main" />
+    <configuration name="HobbyMatchMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="no.hvl.dat102.uke10.Oppgave4.IMPL.HobbyMatchMain" />
       <module name="Innlevering-3-DAT102" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="no.hvl.dat102.uke11.Oppgave4.*" />
+          <option name="PATTERN" value="no.hvl.dat102.uke10.Oppgave4.IMPL.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -147,11 +148,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.HobbyMatchMain" />
         <item itemvalue="JUnit.JavaSetToMengdeTest" />
         <item itemvalue="JUnit.LenketMengdeTest" />
         <item itemvalue="JUnit.TabellMengdeTest" />
         <item itemvalue="Application.Fuckyou" />
-        <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +174,7 @@
       <workItem from="1772539655104" duration="10000" />
       <workItem from="1773141072527" duration="2142000" />
       <workItem from="1773161587174" duration="2190000" />
-      <workItem from="1773227497387" duration="1117000" />
+      <workItem from="1773227497387" duration="2696000" />
     </task>
     <servers />
   </component>
