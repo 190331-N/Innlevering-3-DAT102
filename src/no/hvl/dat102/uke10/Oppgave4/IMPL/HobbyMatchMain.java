@@ -33,7 +33,8 @@ public class HobbyMatchMain {
         Person ole = new Person("Ole",
                 "jakt", "fiske", "friluft");
 
-        System.out.println("Match Arne-Berir: " + match(arne, berit));
+        System.out.println("Match Arne-Berit: " + match(arne, berit));
+        System.out.println("Match Berit-Arne: " + match(berit, arne));
         System.out.println("Match Arne-Ole: " + match(arne, ole));
         System.out.println("Match Berit-Ole: " + match(berit, ole));
     }
