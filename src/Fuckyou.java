@@ -11,7 +11,7 @@ public class Fuckyou extends JPanel {
 
         String tekst = "FUCK YOU";
 
-        Font font = new Font("Arial", Font.BOLD, 80);
+        Font font = new Font("Arial", Font.BOLD, 125);
         g2.setFont(font);
 
         int x = 100;
